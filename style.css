@@ -1,0 +1,45 @@
+body{
+    background: url('netflixbg.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box h1{
+    font-size:45px;
+    font-weight: bold;
+    color: red;
+    margin: 0px 20px;
+    display: inline;
+}
+.box button{
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 70px;
+    background-color: red;
+    border: none;
+    padding: 7px 14 px;
+}
+.box button a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+    text-align: center;
+    }
+#firstpara{
+    font-size: 60px;
+    /*margin: 70px 551px;*/
+    font-weight: bold;
+    text-align: center;
+    margin-top: 250px;
+}
+#sndpara{
+    font-size: 33px;
+   /* margin: 0px 478px;*/
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: -55px;
+}
