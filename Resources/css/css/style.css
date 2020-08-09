@@ -1,5 +1,5 @@
 body{
-    background: url('../Images/netflixbg.jpg');
+    background: black;
     background-size: cover;
     background-repeat: repeat-y;
     color: white;
@@ -42,4 +42,11 @@ body{
     text-align: center;
     margin-bottom: 6px;
     margin-top: -55px;
+}
+.jumbotron h1{
+    text-decoration-color: antiquewhite;
+
+}
+.jumbotron p{
+    text-align: center;
 }
