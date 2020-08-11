@@ -8,7 +8,7 @@ body{
 .box h1{
     font-size:45px;
     font-weight: bold;
-    color: red;
+    color: rgb(145, 7, 7);
     margin: 0px 20px;
     display: inline;
 }
@@ -53,4 +53,36 @@ body{
 }
 .jumbotron p{
     text-align: center;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float:left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    overflow:auto;
+}
+.gallery{
+    margin: 5px;
+    border: 1px solid #000000;
+    float: left;
+    width: 390px;
+}
+.gallery img{
+    width:100%;
+    height: auto;
 }
