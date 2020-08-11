@@ -9,8 +9,7 @@ body{
     font-size:45px;
     font-weight: bold;
     color: rgb(145, 7, 7);
-    margin: 0px 20px;
-    display: inline;
+    text-align: center;
 }
 .box button{
     margin: 0 auto;
@@ -72,17 +71,18 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1800px;
     margin: auto;
     overflow:auto;
 }
 .gallery{
     margin: 5px;
-    border: 1px solid #000000;
-    float: left;
-    width: 390px;
+    padding-left: 20px;
+    float: center;
+    width: 150px;
 }
 .gallery img{
     width:100%;
+    float: center;
     height: auto;
 }
