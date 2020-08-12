@@ -22,20 +22,36 @@ moviedata = create_classes(db)
 migrate = Migrate(app, db)
 
 @app.route('/')
-def home():
+def index():
     return render_template('index.html')
 
+@app.route("/home")
+def home():
+        return render_template('home.html')
+
 @app.route("/svm")
-def bar():
+def svm():
         return render_template('svm.html')
 
 @app.route("/dl")
-def bubble():
+def dl():
         return render_template('dl.html')
 
 @app.route("/logistic")
-def map():
+def logistic():
         return render_template('logistic.html')
+
+@app.route("/rf")
+def rf():
+        return render_template('rf.html')
+
+@app.route("/tableau")
+def tableau():
+        return render_template('tableau.html')
+
+@app.route("/members")
+def members():
+        return render_template('members.html')
 
 @app.route("/data-table")
 def data():
