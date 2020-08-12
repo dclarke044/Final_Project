@@ -25,6 +25,10 @@ migrate = Migrate(app, db)
 def home():
     return render_template('index.html')
 
+@app.route("/home")
+def data():
+        return render_template('home.html')
+
 @app.route("/svm")
 def bar():
         return render_template('svm.html')
@@ -36,6 +40,10 @@ def bubble():
 @app.route("/logistic")
 def map():
         return render_template('logistic.html')
+
+@app.route("/members")
+def data():
+        return render_template('members.html')
 
 @app.route("/data-table")
 def data():
