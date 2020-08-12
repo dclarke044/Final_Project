@@ -1,4 +1,4 @@
-imdb_title_id,title,year,genre,duration,country,director,production_company,budget,total_votes,median_vote,all18to29,all30to44,allover45,males,males18to29,males30to44,malesover45,females,females18to29,females30to44,femalesoverr45,rating_class
+imdb_title_id,title,year,genre,duration,country,director,production_company,budget,total_votes,median_vote,all18to29,all30to44,allover45,males,males18to29,males30to44,malesover45,females,females18to29,females30to44,femalesover45,rating_class
 tt0035423,Kate & Leopold,2001,Comedy,118,USA,James Mangold,Konrad Pictures,48000000,75298,7.0,6.6,6.3,6.4,6.3,6.5,6.2,6.3,6.6,6.7,6.4,6.7,Good
 tt0113026,The Fantasticks,2000,Musical,86,USA,Michael Ritchie,Michael Ritchie Productions,10000000,1082,6.0,5.5,5.5,5.4,5.3,5.4,5.4,5.3,5.7,5.6,5.8,5.6,Good
 tt0118589,Glitter,2001,Drama,104,USA,Vondie Curtis-Hall,Twentieth Century Fox,22000000,20959,1.0,2.6,2.1,2.1,1.9,2.1,1.9,2.0,2.9,3.2,2.7,2.5,Bad

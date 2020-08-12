@@ -42,8 +42,8 @@ def data():
         return render_template('data-table.html')
 
 @app.route("/raw-data")
-def data_retrieval():
-        results = db.session.query(moviedata.id, moviedata.imdb_title_id, moviedata.title, moviedata.year, moviedata.genre, moviedata.duration, moviedata.country, moviedata.director, moviedata.production_company, moviedata.budget, moviedata.total_votes, moviedata.median_vote, moviedata.all18to29, moviedata.all30to44, moviedata.allover45, moviedata.males, moviedata.males18to29, moviedata.males30to44, moviedata.malesover45, moviedata.females, moviedata.females18to29, moviedata.females30to44, moviedata.femalesover45, moviedata.rating_class).all()
+def data_pull():
+        results = db.session.query(moviedata.index, moviedata.imdb_title_id, moviedata.title, moviedata.year, moviedata.genre, moviedata.duration, moviedata.country, moviedata.director, moviedata.production_company, moviedata.budget, moviedata.total_votes, moviedata.median_vote, moviedata.all18to29, moviedata.all30to44, moviedata.allover45, moviedata.males, moviedata.males18to29, moviedata.males30to44, moviedata.malesover45, moviedata.females, moviedata.females18to29, moviedata.females30to44, moviedata.femalesover45, moviedata.rating_class).all()
         # initialize dictionary 
         data = []
         for result in results:
