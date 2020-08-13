@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+​
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+​
+    <title>IMDB Project</title>
+​
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+​
+  </head>
+​
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">IMDB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data-table">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tableau">Tableau</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="rf">Random Forest</a>
+                <a class="dropdown-item" href="logistic">Logistic Regression</a>
+                <a class="dropdown-item" href="svm">Service Vector Machine</a>
+                <a class="dropdown-item" href="dl">Deep Learning</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="members">Members</a> 
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+<!--END OF NAVBAR-->
+    <div class="jumbotron" style="background-image: url('../Resources/Images/movie_reel.jpg'); background-size: 100%;">
+        <div class="container for-about">
+        <div class="container">
+        <h1 class="display-3">Predict Your Movie Rating</h1>
+        <p class="lead">For our final project, we will be using various models to determine the best method for predicting the IMDB rating of a movie based on historical data. </p>
+        </div>
+    </div>
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputYear">Year</label>
+          <select id="inputYear" class="form-control">
+            <option selected>Choose year</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputDuration">Duration (minutes)</label>
+          <input type="duration" class="form-control" id="inputDuration">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputGenre">Genre</label>
+            <select id="inputGenre" class="form-control">
+              <option selected>Choose genre</option>
+              <option>Action</option>
+              <option>Adventure</option>
+              <option>Animation</option>
+              <option>Biography</option>
+              <option>Comedy</option>
+              <option>Crime</option>
+              <option>Drama</option>
+              <option>Family</option>
+              <option>Fantasy</option>
+              <option>Horror</option>
+              <option>Musical</option>
+              <option>Mystery</option>
+              <option>Romance</option>
+              <option>Sci-Fi</option>
+              <option>Thriller</option>
+              <option>Western</option>
+             </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputDirector">Director</label>
+            <select id="inputDirector" class="form-control">
+              <option selected>Choose director</option>
+              <option>J.J. Abrams</option>
+              <option>Michael Bay</option>
+              <option>Quentin Tarentino</option>
+              <option>Martin Scorsese</option>
+              <option>Antoine Fuqua</option>
+              <option>Steven Spielberg</option>
+              <option>Anthony Russo</option>
+              <option>Clint Eastwood</option>
+              <option>Tyler Perry</option>
+              <option>David Gordon Green</option>
+            </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Predict Rating</button>
+    </form>
+
+
+
+
+
+  </body>
+</html>
