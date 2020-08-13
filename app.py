@@ -15,7 +15,7 @@ from models import create_classes
 from config import username, password
 
 #https://stackabuse.com/using-sqlalchemy-with-flask-and-postgresql/
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{username}:{password}@localhost:5432/movies'
 db = SQLAlchemy(app)
 moviedata = create_classes(db)
@@ -29,25 +29,25 @@ def index():
 def home():
         return render_template('home.html')
 
-@app.route("/svm")
-def svm():
-        return render_template('svm.html')
-
-@app.route("/dl")
-def dl():
-        return render_template('dl.html')
-
-@app.route("/logistic")
-def logistic():
-        return render_template('logistic.html')
+@app.route("/models")
+def models():
+        return render_template('models.html')
 
 @app.route("/rf")
 def rf():
         return render_template('rf.html')
 
-@app.route("/tableau")
-def tableau():
-        return render_template('tableau.html')
+@app.route("/tableauyear")
+def tableauyear():
+        return render_template('tableauyear.html')
+
+@app.route("/tableaugenre")
+def tableaugenre():
+        return render_template('tableaugenre.html')
+
+@app.route("/tableaudirector")
+def tableauyear():
+        return render_template('tableaudirector.html')
 
 @app.route("/members")
 def members():
