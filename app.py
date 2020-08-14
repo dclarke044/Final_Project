@@ -46,7 +46,7 @@ def tableaugenre():
         return render_template('tableaugenre.html')
 
 @app.route("/tableaudirector")
-def tableauyear():
+def tableaudirector():
         return render_template('tableaudirector.html')
 
 @app.route("/members")
