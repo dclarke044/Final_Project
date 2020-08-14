@@ -11,6 +11,7 @@ from flask import Flask, render_template, redirect, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from models import create_classes
+import joblib
 
 from config import username, password
 
@@ -20,6 +21,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{username}:{password}@loc
 db = SQLAlchemy(app)
 moviedata = create_classes(db)
 migrate = Migrate(app, db)
+
+model = joblib.load("./ML Models/rf.sav")
 
 @app.route('/')
 def index():

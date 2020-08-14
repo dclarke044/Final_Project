@@ -1,8 +1,8 @@
 var button = d3.select("#button")
 
-button.on("click", runEnter)
+button.on("click", getTest)
 
-function runEnter() {
+function getTest() {
     d3.event.preventDefault();
     var inputYear = d3.select("#inputYear");
     var yearValue = inputYear.property("value");
@@ -21,6 +21,6 @@ function runEnter() {
     console.log(genreValue);
     console.log(directorValue);
 
-    var testData = [yearValue, durationValue, budgetValue, genreValue, directorValue]
+    const testData = [yearValue, durationValue, budgetValue, genreValue, directorValue]
      console.log(testData)
 }
