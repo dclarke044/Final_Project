@@ -21,5 +21,6 @@ function runEnter() {
     console.log(genreValue);
     console.log(directorValue);
 
-
+    var testData = [yearValue, durationValue, budgetValue, genreValue, directorValue]
+     console.log(testData)
 }
