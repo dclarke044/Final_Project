@@ -12,7 +12,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from models import create_classes
 from predict import getRating
-import requests
+from flask import request
 import joblib
 
 from config import username, password
@@ -38,9 +38,15 @@ def home():
 def models():
         return render_template('models.html')
 
-@app.route("/rf")
+@app.route("/rf", methods=['POST','GET'])
 def rf():
-        test = [2015, 150, 750000, "Comedy", "Tyler Perry"]
+        # test = [2015, 150, 750000, "Comedy", "Tyler Perry"]
+        year= request.form['inputYear']
+        duration= request.form['inputDuration']
+        budget= request.form.get('inputBudget', False)
+        genre= request.form.get('inputGenre', False)
+        director= request.form.get('inputDirector', False)
+        test = [year, duration, budget, genre, director]
         getRating(test)
         return render_template('rf.html', ratingResult = getRating(test))    
 
