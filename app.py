@@ -11,6 +11,8 @@ from flask import Flask, render_template, redirect, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from models import create_classes
+from predict import getRating
+import requests
 import joblib
 
 from config import username, password
@@ -38,7 +40,9 @@ def models():
 
 @app.route("/rf")
 def rf():
-        return render_template('rf.html')
+        test = [2015, 150, 750000, "Comedy", "Tyler Perry"]
+        getRating(test)
+        return render_template('rf.html', ratingResult = getRating(test))    
 
 @app.route("/tableauyear")
 def tableauyear():
@@ -72,4 +76,4 @@ def data_pull():
         return json_data
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
