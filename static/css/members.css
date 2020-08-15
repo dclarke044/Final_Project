@@ -46,6 +46,21 @@ body{
     background: grey;
     padding: 10%;
 }
+.jumbotron_model {
+    background: grey;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.jumbotron_model p{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+.jumbotron_model h2{
+    text-align: center;
+    color: white;
+}
 .jumbotron h1{
     text-decoration-color: white;
 }
@@ -95,22 +110,22 @@ body{
     font-size: 30px;
 }
 
-.jumbotron img {
+.jumbotron_model img {
     padding-bottom: 50px;
 }
 
 .deep_learning {
-    padding-left: 150px;
+    padding-left: 25%;
 }
 
 .svm {
-    padding-left: 270px;
+    padding-left: 31.5%;
 }
 
 .logreg {
-    padding-left: 200px;
+    padding-left: 27%;
 }
 
 .forest {
-    padding-left: 150px;
+    padding-left: 25%;
 }
