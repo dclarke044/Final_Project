@@ -58,11 +58,14 @@ body{
     padding-bottom: 10px;
 }
 
-.button {
-    align-content: center;
+h2 {
+    font-size: 45px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
-.tableauPlaceholder {
+.container {
     position: relative;
   }
   
@@ -76,3 +79,5 @@ body{
     left: 50%;
     margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
   }
+
+
