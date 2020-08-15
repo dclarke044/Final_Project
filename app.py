@@ -53,7 +53,7 @@ def rf():
                 # test = [2015, 150, 750000, "Comedy", "Tyler Perry"]
                 #
                 ratingResult= getRating(test)
-                return render_template("rf.html", ratingResult = ratingResult)
+                return render_template("rf.html", ratingResult = ratingResult, year=year, duration=duration, budget=budget, genre=genre, director=director)
         return render_template('rf.html')
 
 @app.route("/tableauyear")

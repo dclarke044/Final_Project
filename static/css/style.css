@@ -65,6 +65,12 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 .container {
     position: relative;
   }

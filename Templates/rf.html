@@ -156,17 +156,20 @@
       <button id= "button" type="submit" class="btn btn-primary">Predict Rating</button>
     </form>
 
-    <div class= "row">
-      <div class= "col-md-12">
-        <h2>Your movie will receive the following rating on IMDB: {{ratingResult}}!</h2>
-      </div>
-    </div>
+
 
 
 
 
 
   </body>
+  <div class= "row">
+    <div class= "col-md-12">
+      <h2>Your movie will receive the following rating on IMDB: {{ratingResult}}!</h2>
+      <h3> Year:{{year}} | Duration: {{duration}} | Budget: {{budget}} | Genre: {{genre}} | Director: {{director}}</h3>
+    </div>
+  </div>
+
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
