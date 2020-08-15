@@ -10,13 +10,13 @@
 ​
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
-	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/home.css">
 ​
   </head>
 ​
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-xlg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">IMDB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,19 +51,73 @@
               <a class="nav-link" href="members">Members</a> 
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
     </nav>
 <!--END OF NAVBAR-->
+  <div class="container">
     <div class="jumbotron" style="background-image: url('/static/Images/movie_reel.jpg'); background-size: 100%;">
         <div class="container for-about">
         <div class="container">
-        <h1 class="display-3">Predict Your Movie Rating</h1>
-        <p class="lead">For our final project, we will be using various models to determine the best method for predicting the IMDB rating of a movie based on historical data. </p>
+        <h1 class="display-3" style="color: white;">Predict Your Movie Rating</h1>
+        <p class="lead" style="color:white;">For our final project, we will be using various models to determine the best method for predicting the IMDB rating of a movie based on historical data. </p>
         </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-xs-12 col-sm-12 mt-3">
+        <div class="card mt-3 home-card">
+          <div class="card-body">
+            <h3>IMDB Movie Ratings</h3>
+            <hr>
+            <h5 class="mt-4">About</h5>
+            <p>
+              Have you ever went to see a movie and was disappointed with the outcome? 
+              Our project focused on designing predictive movie ratings based on genre, year, and director.
+              We tested four machine learning models, and visualized our data through use of tableau.  
+            </p>
+            <div class="row">
+              <div class="col-md-4">
+                <p>No longer do we have to waste 
+                time, money, and energy into a dissapointing movie.
+                Browse our website for more details!</p>
+                <h5 class="mt-5">
+                </h5>
+              </div>
+              <div class="col-md-8">
+                <img class="landing-image img-fluid" src="/static/Images/best_movie.jpg" alt="Popular Movies">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 col-sm-12 mt-3">
+        <div class="card mt-3 home-card">
+          <div class="card-body">
+            <h5 class="card-title">Data</h5>
+            <p class="card-text">It is Imparative to ALWAYS START WITH DATA. Explore our data first by clicking the button below.</p>
+            <a type="button" href="data-table" class="btn btn-dark orange-btn mt-2">View</a>
+          </div>
+        </div>
+        <div class="card mt-3 home-card">
+          <div class="card-body">
+            <h5 class="card-title">Visualizations</h5>
+            <p class="card-text">Explore the categories of our predictive models through tableau visualizations.</p>
+            <a type="button" href="tableauyear" class="btn btn-dark orange-btn mt-2">View </a>
+          </div>
+        </div>
+        <div class="card mt-3 home-card">
+          <div class="card-body">
+            <h5 class="card-title">Predictive Models</h5>
+            <p class="card-text">
+              Through trial and error, we found that the Random Forest Model is the best predictor.
+              Click the button below to predict an IMDB movie rating.
+            </p>
+            <a type="button" href="rf" target="_blank" class="btn btn-dark orange-btn mt-2">Random Forest</a>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
