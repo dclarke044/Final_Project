@@ -51,3 +51,13 @@ body{
 .jumbotron p{
     text-align: center;
 }
+
+.lead {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button {
+    align-content: center;
+}

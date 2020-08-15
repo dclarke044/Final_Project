@@ -6,7 +6,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .box h1{
-    font-size:45px;
+    font-size:70px;
     font-weight: bold;
     color: rgb(145, 7, 7);
     text-align: center;
@@ -48,10 +48,15 @@ body{
 }
 .jumbotron h1{
     text-decoration-color: white;
-
+}
+.jumbotron h2{
+    text-align: center;
+    color: white;
 }
 .jumbotron p{
     text-align: center;
+    font-size: 25px;
+    padding-bottom: 40px;
 }
   
 * {
@@ -89,4 +94,24 @@ body{
 
 .row {
     padding-left: 5px;
+}
+
+.jumbotron img {
+    padding-bottom: 50px;
+}
+
+.deep_learning {
+    padding-left: 150px;
+}
+
+.svm {
+    padding-left: 270px;
+}
+
+.logreg {
+    padding-left: 200px;
+}
+
+.forest {
+    padding-left: 150px;
 }
