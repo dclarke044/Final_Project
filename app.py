@@ -56,21 +56,6 @@ def rf():
                 return render_template("rf.html", ratingResult = ratingResult)
         return render_template('rf.html')
 
-@app.route("/rfresults", methods = ['POST', 'GET'])   
-def rfresults():
-        if request.method == 'POST':
-                result = request.form
-                print(result)
-                year= request.form['inputYear']
-                duration= request.form['inputDuration']
-                budget= request.form['inputBudget']
-                genre= request.form['inputGenre']
-                director= request.form['inputDirector']
-                test = [year, duration, budget, genre, director]
-                
-
-        return render_template("rfresults.html", ratingResult= getRating(test))
-
 @app.route("/tableauyear")
 def tableauyear():
         return render_template('tableauyear.html')
