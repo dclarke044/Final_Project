@@ -8,7 +8,6 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  color: #3d0000;
 }
 
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
@@ -17,9 +16,17 @@ body {
   min-height: 100%;
   padding-bottom: 130px;
   overflow: auto;
-  background: #ffffff;
+  background-color: #4e5d6c;
 }
 
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color:black;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: #1b3146; 
+ }
 /* The footer is positioned at the bottom of the page */
 .footer {
   position: absolute;
@@ -27,7 +34,7 @@ body {
   bottom: 0;
   left: 0;
   min-height: 100px;
-  background: #ffffff;
+  background: #4e5d6c;
 }
 
 /* The code styles the text at the bottom of the footer */
@@ -37,13 +44,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #ffffff;
-  color: black;
-}
-
-.container {
-  margin: 100;
-  background: #ffffff;
+  background: #1b3146;
 }
 
 .navbar {
@@ -88,7 +89,7 @@ select {
 #table-area th:first-child,
 #table-area th:nth-child(2),
 #table-area th:nth-child(6) {
-  min-width: 200px;
+  min-width: 70px;
 }
 
 .loader {
@@ -97,11 +98,33 @@ select {
 
 .margin-top-50 {
   margin-top: 50px;
-  background: #ffffff;
 }
 
 /* The styles for the parallax */
+.hero {
+  position: relative;
+  height: 550px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/nasa.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
 
+.hero h1 {
+  margin-top: 200px;
+  font-size: 0.1rem;
+  animation: title 1.2s forwards linear;
+}
+
+.hero p {
+  font-size: 2rem;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+}
 
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
@@ -134,14 +157,12 @@ select {
 @media (max-width: 500px) {
   #table-area thead {
     display: none;
-    color: black
   }
 
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #3d211a;
-    color: black
+    background: #1b3146;
   }
 
   #table-area tr td:last-child {
@@ -154,7 +175,7 @@ select {
     height: 1px;
     margin-top: 20px;
     content: " ";
-    background: rgb(240, 248, 255);
+    background: aliceblue;
   }
 
   #table-area td {
@@ -172,6 +193,10 @@ select {
     font-weight: bold;
     text-align: center;
     content: attr(data-th);
+  }
+
+  .hero h1 {
+    animation: smaller-title 1.2s forwards linear;
   }
 }
 

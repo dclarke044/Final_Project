@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-​
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>IMDB Project</title>
+<script src="../static/css/data-style.css"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"> -->
@@ -33,21 +33,17 @@
             <li class="nav-item">
               <a class="nav-link" href="data-table">Data</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tableau
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="tableauyear">Release Year</a>
-                <a class="dropdown-item" href="tableaugenre">Genre</a>
-                <a class="dropdown-item" href="tableaudirector">Director</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="tableau">Tableau</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="rf">Random Forest</a>
-                <a class="dropdown-item" href="models">Other Models</a>
+                <a class="dropdown-item" href="logistic">Logistic Regression</a>
+                <a class="dropdown-item" href="svm">Service Vector Machine</a>
+                <a class="dropdown-item" href="dl">Deep Learning</a>
               </div>
             </li>
             <li class="nav-item">
@@ -62,12 +58,10 @@
 <!--END OF NAVBAR-->
 </div>
 <div class="container">
-      </div>
-        </aside>
-        </div>
-        <div class="col-md-10">
+  <div class="row margin-top-50">
+    <div class="col-md-2">
           <div id="table-area" class="">
-            <table id="movie-table" class="table">
+            <table id="movie-table" class="table table-striped">
               <thead>
                 <tr>
               <th class="table-head">IMDB Title ID</th>
@@ -83,11 +77,14 @@
               <th class="table-head">Rating Class</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody id="body"></tbody>
         </table>
       </div>
     </div>
   </div>
+  <div class="col-md-10">
+  </div>
+  <footer class="footer">
 </div>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
