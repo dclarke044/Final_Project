@@ -53,7 +53,7 @@ def rf():
                 # test = [2015, 150, 750000, "Comedy", "Tyler Perry"]
                 #
                 ratingResult= getRating(test)
-                return redirect('/tableauyear')
+                return redirect(url_for('tableauyear.html'))
         return render_template('rf.html')
 
 @app.route("/rfresults", methods = ['POST', 'GET'])   
