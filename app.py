@@ -13,6 +13,7 @@ from flask_migrate import Migrate
 from models import create_classes
 from predict import getRating
 from flask import request
+from flask import url_for
 import joblib
 
 from config import username, password
@@ -40,15 +41,35 @@ def models():
 
 @app.route("/rf", methods=['POST','GET'])
 def rf():
-        # test = [2015, 150, 750000, "Comedy", "Tyler Perry"]
-        year= request.form['inputYear']
-        duration= request.form['inputDuration']
-        budget= request.form.get('inputBudget', False)
-        genre= request.form.get('inputGenre', False)
-        director= request.form.get('inputDirector', False)
-        test = [year, duration, budget, genre, director]
-        getRating(test)
-        return render_template('rf.html', ratingResult = getRating(test))    
+        if request.method == 'POST':
+                # print(request.form)
+                year= request.form['inputYear']
+                duration= request.form['inputDuration']
+                budget= request.form['inputBudget']
+                genre= request.form['inputGenre']
+                director= request.form['inputDirector']
+                test = [year, duration, budget, genre, director]
+               
+                # test = [2015, 150, 750000, "Comedy", "Tyler Perry"]
+                #
+                ratingResult= getRating(test)
+                return redirect('/tableauyear')
+        return render_template('rf.html')
+
+@app.route("/rfresults", methods = ['POST', 'GET'])   
+def rfresults():
+        if request.method == 'POST':
+                result = request.form
+                print(result)
+                year= request.form['inputYear']
+                duration= request.form['inputDuration']
+                budget= request.form['inputBudget']
+                genre= request.form['inputGenre']
+                director= request.form['inputDirector']
+                test = [year, duration, budget, genre, director]
+                
+
+        return render_template("rfresults.html", ratingResult= getRating(test))
 
 @app.route("/tableauyear")
 def tableauyear():
