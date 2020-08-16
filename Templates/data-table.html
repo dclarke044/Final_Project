@@ -15,63 +15,72 @@
 
   </head>
 ​
-<body>
+<body style="background-color: black;">
 </nav>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">IMDB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="data-table">Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tableau">Tableau</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="rf">Random Forest</a>
-                <a class="dropdown-item" href="logistic">Logistic Regression</a>
-                <a class="dropdown-item" href="svm">Service Vector Machine</a>
-                <a class="dropdown-item" href="dl">Deep Learning</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="members">Members</a> 
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-          </form>   
-</nav>
+    <nav class="navbar navbar-expand-xlg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">IMDB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data-table">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tableau
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="tableauyear">Release Year</a>
+              <a class="dropdown-item" href="tableaugenre">Genre</a>
+              <a class="dropdown-item" href="tableaudirector">Director</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="rf">Random Forest</a>
+              <a class="dropdown-item" href="models">Other Models</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="members">Members</a> 
+          </li>
+        </ul>
+      </div>
+    </div>  
+  </nav>
 <!--END OF NAVBAR-->
+<div class="container">
+  <div class="jumbotron" style="background-image: url('/static/Images/gatsby.jpg'); background-size: 100%;">
+      <div class="container for-about">
+      <div class="container">
+      <h1 class="display-3" style="color: whitesmoke;padding-left: 50px;">Toast to</h1>
+      <h1 class="display-3" style="color:whitesmoke;padding-left: 500px;padding-top: 200px;">The Data</h1>
+      </div>
+  </div>
 </div>
 <p></p>
 <p></p>
 <div class="wrapper">
 </div>
-<div class="container">
+<div class="container" style="background-color:whitesmoke">
   <div class="row margin-top-50">
     <div class="col-md-2">
       <aside class="filters">
-            <div class="container">
+            <div class="container"> 
               <div class="row margin-top-50">
               <div class="col-md-2">
       </div>
         </aside>
         </div>
-          <div id="table-area" class="">
-            <table id="movie-table" class="table table-striped">
+          <div id="table-area" class="" style= "color:whitesmoke;">
+            <table id="movie-table" class="table table-striped" style="background-color:whitesmoke">
               <thead>
                 <tr>
               <th class="table-head">IMDB Title ID</th>

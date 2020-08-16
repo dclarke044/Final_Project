@@ -16,83 +16,79 @@
 ​
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">IMDB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="data-table">Data</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tableau
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="tableauyear">Release Year</a>
-                <a class="dropdown-item" href="tableaugenre">Genre</a>
-                <a class="dropdown-item" href="tableaudirector">Director</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="rf">Random Forest</a>
-                <a class="dropdown-item" href="models">Other Models</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="members">Members</a> 
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-xlg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">IMDB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data-table">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tableau
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="tableauyear">Release Year</a>
+              <a class="dropdown-item" href="tableaugenre">Genre</a>
+              <a class="dropdown-item" href="tableaudirector">Director</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="rf">Random Forest</a>
+              <a class="dropdown-item" href="models">Other Models</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="members">Members</a> 
+          </li>
+        </ul>
+      </div>
+    </div>  
+  </nav>
 <!--END OF NAVBAR-->
     <!---Containers W/summary-->
     <div class="box">
-      <div class="jumbotron">
+      <div class="jumbotron" style="background-color:black;">
           
           <h1 style="text-align: center;">Member's Contact Information</h1>
           <hr class="my-4">
-          <p>Click on each member's image for more information.</p>
+          <p style="color:white;">Click on each member's image for more information.</p>
           <div class="container">
           <div class="row">
            <div class="gallery" >
-            <div class="title"  align="center">Alexis Palmer</div>
+            <div class="title"  align="center" style="color:white;">Alexis Palmer</div>
             <a href="https://github.com/AGPalmer88">
               <img src="/static/Images/Slide5.jpg" title="Alexis image" alt="Alexis_Image" width: "40%;">
              </a>
             </div>
           <div class="gallery">
-            <div class="title" align="center">Chantay Drake</div>
+            <div class="title" align="center" style="color:white;">Chantay Drake</div>
             <a href="https://github.com/cdrake11">
               <img src="/static/Images/Slide1.jpg" title="Chantay image" alt="Chantay_Image" width: "40%;">
              </a>
             </div>
            <div class="gallery">
-            <div class="title" align="center">Jewell Foster</div>
+            <div class="title" align="center" style="color:white;">Jewell Foster</div>
              <a href="https://github.com/jnfost">
               <img src="/static/Images/Slide3.jpg" title="Jewel image" alt="Jewell_Image" width: "40%;">
              </a>
             </div>
           <div class="gallery">
-            <div class="title" align="center">Brynna Bridges</div>
+            <div class="title" align="center" style="color:white;">Brynna Bridges</div>
              <a href="https://github.com/BrynnaBridges">
               <img src="/static/Images/Slide2.jpg" title="Brynna image" alt="Brynna_Image" width: "40%;">
              </a>
             </div>
           <div class="gallery">
-            <div class="title" align="center">De-Anna Clarke</div>
+            <div class="title" align="center" style="color:white;">De-Anna Clarke</div>
              <a href="https://github.com/dclarke044">
               <img src="/static/Images/Slide4.jpg" title="De-Anna image" alt="De-Anna_Image" width: "40%;">
              </a>
