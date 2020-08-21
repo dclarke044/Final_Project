@@ -34,6 +34,9 @@ Heroku app: https://clarke-imdb.herokuapp.com/
 * PostgreSQL
 
 ## Project Description
+### Site Design
+
+### Data Cleaning
 
 ## Tableau Visualizations
 ### Year Dashboard
