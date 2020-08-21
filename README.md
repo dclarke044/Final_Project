@@ -34,18 +34,21 @@ Heroku app: https://clarke-imdb.herokuapp.com/
 * PostgreSQL
 
 ## Project Description
+### Site Design
+
+### Data Cleaning
 
 ## Tableau Visualizations
-### Year Dashboard
+### Release Year Dashboard
 
+![](static/Images/release_year.png)
 ### Genre Dashboard
 
+![](static/Images/genre_dashboard.png)
 ### Director Dashboard
 
-The directors we have shown are the more popular directors with the most votes and data.
-
+![](static/Images/directors_dashboard.png)
 ## Machine Learning Model
-
 ### Deep Learning
 
 ![](static/Images/dl-final.png)
@@ -59,3 +62,6 @@ The directors we have shown are the more popular directors with the most votes a
 ![](static/Images/lr-final.png)
 
 ### Random Forest
+
+![](static/Images/rf-final.png)
+![](static/Images/random_forest.png)
