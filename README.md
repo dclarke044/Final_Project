@@ -51,6 +51,8 @@ The directors we have shown are the more popular directors with the most votes a
 
 For gender vs rating showing green from 0-7.3 and blue 7.4 to 8. For these particular directors we noticed that all of them are male and the male gender voted for highest rated directors. But on the far left side of the gender vs rating we have Martin Scorsese, who is known for The Godfather has the highest rating votes but not the highest budget for movies.
 
+From the budget vs rating dashboard we see Anthony Russo known for The Avengers and Captain America is showing the highest avg budget of 230 million with an average vote of 8 but he's not the highest rated director. So we see just because some one has a higher budget doesn't mean they are the most popular voted director.
+
 ![](static/Images/directors_dashboard.png)
 ## Machine Learning Model
 
