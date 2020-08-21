@@ -58,6 +58,8 @@ Given the analysis that we did in Tableau, we decided to predict the movie’s r
 
 ### Support Vector Model (SVM)
 
+For the SVM we cleaned the data with label and dummy encoder to get a better accuracy for our target rating class for bad excellent and good. We have the SVM training accuracy at 0.91% and SVM testing accuracy at 0.64%. 
+
 ![](static/Images/svm-final.png)
 
 ### Logistic Regression
