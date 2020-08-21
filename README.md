@@ -45,8 +45,14 @@ Heroku app: https://clarke-imdb.herokuapp.com/
 ## Machine Learning Model
 ### Deep Learning
 
+![](static/Images/dl-final.png)
+
 ### Support Vector Model (SVM)
 
+![](static/Images/svm-final.png)
+
 ### Logistic Regression
+
+![](static/Images/lr-final.png)
 
 ### Random Forest
