@@ -50,7 +50,8 @@ Heroku app: https://clarke-imdb.herokuapp.com/
 ![](static/Images/directors_dashboard.png)
 ## Machine Learning Model
 
-Given the analysis that we did in Tableau, we decided to predict the movie’s rating class based on release year, duration, budget, genre, and director.
+Given the analysis that we did in Tableau, we decided to predict the movie’s rating class based on release year, duration, budget, genre, and director. We started with a linear regression model and elasticnet, but the accuracy was around 10%. So we figured that no amount of hyper-parameter tuning would get us much higher than that. For some models we tried only using the numerical features (year, duration, and budget) but the results were not better so we decided to move forward with both numerical and categorical data.
+
 ### Deep Learning
 
 ![](static/Images/dl-final.png)
