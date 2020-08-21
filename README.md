@@ -49,6 +49,8 @@ Heroku app: https://clarke-imdb.herokuapp.com/
 
 The directors we have shown are the more popular directors with the most votes and data. We used directors as one of our elements for the prediction models as well. Here we are showing the director data comparison of gender vs rating and budget vs rating.
 
+For gender vs rating showing green from 0-7.3 and blue 7.4 to 8. For these particular directors we noticed that all of them are male and the male gender voted for highest rated directors. But on the far left side of the gender vs rating we have Martin Scorsese, who is known for The Godfather has the highest rating votes but not the highest budget for movies.
+
 ![](static/Images/directors_dashboard.png)
 ## Machine Learning Model
 
