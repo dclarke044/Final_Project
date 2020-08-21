@@ -47,6 +47,8 @@ Heroku app: https://clarke-imdb.herokuapp.com/
 ![](static/Images/genre_dashboard.png)
 ### Director Dashboard
 
+The directors we have shown are the more popular directors with the most votes and data. We used directors as one of our elements for the prediction models as well. Here we are showing the director data comparison of gender vs rating and budget vs rating.
+
 ![](static/Images/directors_dashboard.png)
 ## Machine Learning Model
 
