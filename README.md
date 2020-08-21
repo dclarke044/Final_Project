@@ -49,6 +49,8 @@ Heroku app: https://clarke-imdb.herokuapp.com/
 
 ![](static/Images/directors_dashboard.png)
 ## Machine Learning Model
+
+Given the analysis that we did in Tableau, we decided to predict the movie’s rating class based on release year, duration, budget, genre, and director.
 ### Deep Learning
 
 ![](static/Images/dl-final.png)
