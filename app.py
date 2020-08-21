@@ -19,7 +19,7 @@ import joblib
 # from config import username, password
 
 #https://stackabuse.com/using-sqlalchemy-with-flask-and-postgresql/
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__, static_url_path='/static',template_folder="Templates")
 app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://postgres:mamba20@localhost:5432/movies'
 db = SQLAlchemy(app)
 moviedata = create_classes(db)
