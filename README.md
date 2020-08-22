@@ -35,6 +35,7 @@ Heroku app: https://clarke-imdb.herokuapp.com/
 
 ## Project Description
 ### Site Design
+Our site was designed using HTML and CSS. We wanted our site to be easily navigated, and fun to use. We highlighted important elements on our homepage, and showed our project process through navigational links. 
 
 ### Data Cleaning
 
