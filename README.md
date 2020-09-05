@@ -71,6 +71,9 @@ Given the analysis that we did in Tableau, we decided to predict the movie’s r
 
 ### Deep Learning
 
+For our deep learning model we used get_dummies to encode our categorical data (genre and director). We created the test train split (default 75/25) and scaled our data using the standard scaler. Lastly we used to_categorical to encode our target (rating class). Our model included 2 hidden layers with 100 nodes each. The accuracy on this model was 58%. 
+
+
 ![](static/Images/dl-final.png)
 
 ### Support Vector Model (SVM)
@@ -81,9 +84,19 @@ For the SVM we cleaned the data with label and dummy encoder to get better accur
 
 ### Logistic Regression
 
+We also explored a logistic model. We followed the same process as before with get_dummies, but we used label encoder to encode our y values. We also used the standard scaler here. When running the model, we set the class_weight parameter to balanced. This is to account for the variance in the frequency of each class in our dataset.
+
+The training score was 95% and the testing score was 65%. This model could be overfitted. Next, we did a grid search to try to tune the model. We tried multiple values for max iterations and C (learning rate). With the optimized parameters, we were able to get the test score up 1 percent to 66%.
+
+
 ![](static/Images/lr-final.png)
 
 ### Random Forest
+
+Our most successful model was the random forest classifier. Again, we used year, duration, budget, genre, and director. The categorical data was transformed using get_dummies and the rating class was transformed using label encoder. Since this is random forest, we did not need to scale our data. The training score was 99% and the testing score was 71.1%. When looking at the feature importance, we saw that the most popular splitting points were budget, duration, and year. Then came the genres, and finally directors. Again, we did try this model without the categorical data, but the results were not drastically better. 
+
+The grid search for this model included n_estimators (number of trees), max_depth (maximum levels per tree), max_features (number of features to consider when looking for a split), and max_samples(number of samples to draw from X to train each tree). With the optimized hyperparameters, the models test accuracy increased to 71.5%.
+
 
 ![](static/Images/rf-final.png)
 ![](static/Images/random_forest.png)
